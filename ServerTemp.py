@@ -19,7 +19,7 @@ RPIServer = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # Sensor de temperatura y humedad
 
-dhtPin = 17
+dhtPin = 18
 
 DHT = dht11.DHT11(dhtPin)
 
@@ -69,4 +69,5 @@ except KeyboardInterrupt:
 finally:
     GPIO.cleanup()
     print ('\nGPIO has been cleaned')
+
 
